@@ -1,3 +1,11 @@
+<!--
+
+It is a forum page. It contains home and users pages. I used radio, text, button, alert, dropdowns. 
+You can register and after that you can see your info on the Users page.
+
+-->
+
+
 <?php require_once("header.php"); ?>
 <?php
 
