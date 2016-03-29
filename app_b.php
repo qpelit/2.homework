@@ -272,7 +272,7 @@ float : left;
 				<div class="col-md-8 col-sm-8">
                                     <div class="input-group">
                   <span class="input-group-addon" id="log_password">Password</span>
-                  <input type="log_password" name="log_password"  id="password" class="form-control" placeholder=" " aria-describedby="log_password">
+                  <input type="password" name="log_password"  id="password" class="form-control" placeholder=" " aria-describedby="log_password">
                 </div>
 				</div>
 			</div>

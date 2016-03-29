@@ -13,8 +13,10 @@
 		IF THERE IS ?DELETE=ROW_ID in the url
 	*/
 	if(isset($_GET["delete"])){
-		
-		echo "Deleting row with id:".$_GET["delete"];
+		?>
+		<div class="alert alert-warning" role="alert"> Deleting row with id: <?php echo " ".$_GET["delete"]; 
+?></div>
+<?php
 		
 		// NOW() = current date-time
 		$stmt = $mysql->prepare("UPDATE my_Data SET deleted=NOW() WHERE id = ?");
@@ -25,7 +27,10 @@
 		$stmt->bind_param("i", $_GET["delete"]);
 		
 		if($stmt->execute()){
-			echo "deleted successfully";
+				?>
+		<div class="alert alert-success" role="alert"> deleted successfuly id: <?php echo " ".$_GET["delete"]; 
+?></div>
+<?php
 		}else{
 			echo $stmt->error;
 		}
